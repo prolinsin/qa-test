@@ -42,6 +42,9 @@ npm run start:server
 // Install webdriver
 npm install -g webdriver-manager
 webdriver-manager update --gecko=false
+
+// If you are unable to run webdriver update do it from your local node_modules
+./node_modules/protractor/bin/webdriver-manager update
 ```
 
 ## How to write the tests

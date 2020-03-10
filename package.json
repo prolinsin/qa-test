@@ -7,6 +7,7 @@
     "start:server": "node node_modules/json-server/lib/cli/bin.js db.json",
     "build": "ng build",
     "test": "protractor e2e/protractor.conf.js",
+    "test:parallel": "protractor e2e/protractor.conf.js --capabilities.shardTestFiles=true --capabilities.maxInstances=2",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
@@ -44,6 +45,7 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "node-json-db": "^1.0.2",
     "protractor": "~5.4.2",
+    "protractor-html-reporter-2": "^1.0.4",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.6.4"
